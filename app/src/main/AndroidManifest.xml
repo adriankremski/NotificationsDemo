@@ -12,6 +12,12 @@
             android:name=".BasicNotifications"
             android:label="@string/basic_notifications"
             android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".StylingNotifications"
+            android:label="@string/styling_notifications"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

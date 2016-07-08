@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NotificationsDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="basic_notifications">Basic notifications</string>
+</resources>

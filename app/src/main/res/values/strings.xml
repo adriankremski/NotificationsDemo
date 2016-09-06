@@ -10,4 +10,8 @@
     <string name="line_3">Line 3</string>
     <string name="line_4">Line 4</string>
     <string name="big_picture_title">Big picture title</string>
+    <string name="headsup_notifications">Heads-up notifications</string>
+    <string name="lockscreen_notifications">LockScreen notifications</string>
+    <string name="custom_view_notification">CustomViewNotification</string>
+    <string name="android_n_notifications">Android N Notifications</string>
 </resources>

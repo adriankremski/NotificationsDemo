@@ -1,4 +1,4 @@
-package com.github.snuffix.notifications;
+package com.github.snuffix.notifications.part1;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.NotificationCompat;
 import android.support.v7.widget.Toolbar;
+
+import com.github.snuffix.notifications.R;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -40,7 +42,7 @@ public class StylingNotifications extends AppCompatActivity {
                 intentWithDefinedAction, PendingIntent.FLAG_UPDATE_CURRENT);
 
         Notification notification = basicNotification()
-                .setStyle(new NotificationCompat.BigTextStyle().bigText(getString(R.string.big_text)))
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(getString(R.string.big_text)).setSummaryText("Summary"))
                 .addAction(android.R.drawable.ic_dialog_email, getString(R.string.action), pi).build();
 
         notificationManager.notify(bigNotificationId, notification);

@@ -14,21 +14,9 @@
     tools:showIn="@layout/activity_styling_notifications">
 
     <Button
-        android:id="@+id/bigtext_notification"
+        android:id="@+id/headsup_notification"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Big text notification" />
-
-    <Button
-        android:id="@+id/inbox_notification"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Inbox notification" />
-
-    <Button
-        android:id="@+id/bigpicture_notification"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Big picture notification" />
+        android:text="Heads-up notification" />
 
 </LinearLayout>

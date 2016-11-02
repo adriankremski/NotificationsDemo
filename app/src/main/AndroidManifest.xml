@@ -8,24 +8,29 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".part1.BasicNotifications"
-            android:label="@string/basic_notifications"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
 
         <activity
-            android:name=".part1.StylingNotifications"
-            android:label="@string/styling_notifications"
+            android:name=".MainActivity"
+            android:label="@string/main_activity"
             android:theme="@style/AppTheme.NoActionBar">
-
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".part1.BasicNotifications"
+            android:label="@string/basic_notifications"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".part1.StylingNotifications"
+            android:label="@string/styling_notifications"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
         <activity
@@ -41,8 +46,14 @@
         </activity>
 
         <activity
-            android:name=".part2.CustomViewNotification"
+            android:name=".part2.CustomViewNotifications"
             android:label="@string/custom_view_notification"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".part2.ActiveNotifications"
+            android:label="@string/active_notitications"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
@@ -56,6 +67,22 @@
         <service
             android:name=".part3.ReplyToEmailService"
             android:exported="false"/>
+
+        <service android:name=".part2.NotificationService"
+            android:label="@string/service_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".part2.NotificationAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>

@@ -17,7 +17,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class CustomViewNotification extends NotificationActivity {
+public class CustomViewNotifications extends NotificationActivity {
 
     @Bind(R.id.custom_view_notifcation_input)
     EditText textInput;

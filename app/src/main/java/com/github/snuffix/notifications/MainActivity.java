@@ -12,6 +12,7 @@ import com.github.snuffix.notifications.part2.CustomViewNotifications;
 import com.github.snuffix.notifications.part2.HeadsUpNotifications;
 import com.github.snuffix.notifications.part2.LockScreenNotifications;
 import com.github.snuffix.notifications.part3.AndroidNNotifications;
+import com.github.snuffix.notifications.part3.MessagingStyle;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -60,5 +61,10 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.android_n_notifications)
     public void androidNNotifications() {
         startActivity(new Intent(this, AndroidNNotifications.class));
+    }
+
+    @OnClick(R.id.messaging_style)
+    public void messagingStyle() {
+        startActivity(new Intent(this, MessagingStyle.class));
     }
 }

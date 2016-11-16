@@ -30,55 +30,14 @@
         android:orientation="vertical"
         android:paddingTop="@dimen/activity_vertical_margin"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".part1.BasicNotifications"
         tools:showIn="@layout/activity_styling_notifications">
-
-        <Button
-            android:id="@+id/basic_notifications"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Basic notifications"/>
-
-        <Button
-            android:id="@+id/styling_notifications"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Styling notifications"/>
-
-        <Button
-            android:id="@+id/headsup_notifications"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Heads up notifications"/>
-
-        <Button
-            android:id="@+id/lockscreen_notifications"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lockscreen notifications"/>
-
-        <Button
-            android:id="@+id/custom_view_notifications"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Custom view notifications"/>
-
-        <Button
-            android:id="@+id/active_notifications"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Active notifications"/>
-
-        <Button
-            android:id="@+id/android_n_notifications"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Android N notifications"/>
 
         <Button
             android:id="@+id/messaging_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Messaging style"/>
+            android:text="Messaging style example"/>
     </LinearLayout>
 
 

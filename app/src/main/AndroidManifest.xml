@@ -64,6 +64,13 @@
 
         </activity>
 
+        <activity
+            android:name=".part3.MessagingStyle"
+            android:label="@string/android_n_notifications"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
         <service
             android:name=".part3.ReplyToEmailService"
             android:exported="false"/>
